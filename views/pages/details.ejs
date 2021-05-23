@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css.css">
+</head>
+<body>
+    <p>title <%=sqlDataId.title%></p>
+    <p>company <%=sqlDataId.company%></p>
+    <p>location <%=sqlDataId.location%></p>
+    <p>url <%=sqlDataId.url%></p>
+
+    <form action="/delete/<%=sqlDataId.id%>?_method=delete" method="POST">
+    <button>delete</button>
+    </form>
+
+    <form action="/update/<%=sqlDataId.id%>?_method=delete" method="POST">
+        <input type="text" name="title" value="<%=sqlDataId.title%>">
+        <input type="text" name="company" value="<%=sqlDataId.company%>">
+        <input type="text" name="location" value="<%=sqlDataId.location%>">
+        <input type="text" name="url" value="<%=sqlDataId.url%>">
+        
+        <button>update</button>
+        </form>
+</body>
+</html>

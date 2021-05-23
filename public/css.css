@@ -1,0 +1,27 @@
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: DodgerBlue;
+    justify-content: center;
+  }
+  
+  body > form {
+    background-color: #ff0000;
+    
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+
+  body > p {
+    background-color: #f1f1f1;
+    
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
